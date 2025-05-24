@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calorie Tracker</title>
+</head>
+<body>
+    <h1>Log Your Meal</h1>
+    <form id="meal-form">
+        <label for="meal">Enter ingredients or meal description:</label><br>
+        <textarea id="meal" name="meal" rows="5" cols="40" required></textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Response:</h2>
+    <pre id="response"></pre>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
